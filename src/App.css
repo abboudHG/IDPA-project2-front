@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
 .App {
   text-align: center;
 }
@@ -36,3 +38,14 @@
     transform: rotate(360deg);
   }
 }
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card{
+  margin: 20px 20px 20px 20px ;
+}
+
