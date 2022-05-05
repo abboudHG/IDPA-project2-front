@@ -54,6 +54,23 @@ const TED= async()=>{
     <option value="Document 1" style={{fontFamily:"gilroy-regular"}}>Document1</option>
     <option value="Document 2" style={{fontFamily:"gilroy-regular"}}>Document2</option>
     <option value="Document 3" style={{fontFamily:"gilroy-regular"}}>Document3</option>
+    <option value="Document 4" style={{fontFamily:"gilroy-regular"}}>Document4</option>
+    <option value="Document 5" style={{fontFamily:"gilroy-regular"}}>Document5</option>
+    <option value="Document 6" style={{fontFamily:"gilroy-regular"}}>Document6</option>
+    <option value="Document 7" style={{fontFamily:"gilroy-regular"}}>Document7</option>
+    <option value="Document 8" style={{fontFamily:"gilroy-regular"}}>Document8</option>
+    <option value="Document 9" style={{fontFamily:"gilroy-regular"}}>Document9</option>
+    <option value="Document 10" style={{fontFamily:"gilroy-regular"}}>Document10</option>
+    <option value="Document 11" style={{fontFamily:"gilroy-regular"}}>Document11</option>
+    <option value="Document 12" style={{fontFamily:"gilroy-regular"}}>Document12</option>
+    <option value="Document 13" style={{fontFamily:"gilroy-regular"}}>Document13</option>
+    <option value="Document 14" style={{fontFamily:"gilroy-regular"}}>Document14</option>
+    <option value="Document 15" style={{fontFamily:"gilroy-regular"}}>Document15</option>
+    <option value="Document 16" style={{fontFamily:"gilroy-regular"}}>Document16</option>
+    <option value="Document 17" style={{fontFamily:"gilroy-regular"}}>Document17</option>
+    <option value="Document 18" style={{fontFamily:"gilroy-regular"}}>Document18</option>
+    <option value="Document 19" style={{fontFamily:"gilroy-regular"}}>Document19</option>
+    <option value="Document 20" style={{fontFamily:"gilroy-regular"}}>Document20</option>
     
       </select>
         </div>
@@ -64,9 +81,26 @@ const TED= async()=>{
      <div>
      <label style={{fontSize:"20px" , fontFamily:"gilroy-regular"}}> Destination: </label>
      <select name="source" style={{fontSize:"20px"}}  onChange={(e)=>{setDestinationTED(e.target.value)}}>
-    <option value="Document 1" style={{fontFamily:"gilroy-regular"}}>Document1</option>
+     <option value="Document 1" style={{fontFamily:"gilroy-regular"}}>Document1</option>
     <option value="Document 2" style={{fontFamily:"gilroy-regular"}}>Document2</option>
     <option value="Document 3" style={{fontFamily:"gilroy-regular"}}>Document3</option>
+    <option value="Document 4" style={{fontFamily:"gilroy-regular"}}>Document4</option>
+    <option value="Document 5" style={{fontFamily:"gilroy-regular"}}>Document5</option>
+    <option value="Document 6" style={{fontFamily:"gilroy-regular"}}>Document6</option>
+    <option value="Document 7" style={{fontFamily:"gilroy-regular"}}>Document7</option>
+    <option value="Document 8" style={{fontFamily:"gilroy-regular"}}>Document8</option>
+    <option value="Document 9" style={{fontFamily:"gilroy-regular"}}>Document9</option>
+    <option value="Document 10" style={{fontFamily:"gilroy-regular"}}>Document10</option>
+    <option value="Document 11" style={{fontFamily:"gilroy-regular"}}>Document11</option>
+    <option value="Document 12" style={{fontFamily:"gilroy-regular"}}>Document12</option>
+    <option value="Document 13" style={{fontFamily:"gilroy-regular"}}>Document13</option>
+    <option value="Document 14" style={{fontFamily:"gilroy-regular"}}>Document14</option>
+    <option value="Document 15" style={{fontFamily:"gilroy-regular"}}>Document15</option>
+    <option value="Document 16" style={{fontFamily:"gilroy-regular"}}>Document16</option>
+    <option value="Document 17" style={{fontFamily:"gilroy-regular"}}>Document17</option>
+    <option value="Document 18" style={{fontFamily:"gilroy-regular"}}>Document18</option>
+    <option value="Document 19" style={{fontFamily:"gilroy-regular"}}>Document19</option>
+    <option value="Document 20" style={{fontFamily:"gilroy-regular"}}>Document20</option>
     
       </select>
      </div>
@@ -88,9 +122,26 @@ const TED= async()=>{
   <div className='dropDown'>
             <label style={{fontSize:"20px", fontFamily:"gilroy-regular"}}> Source: </label>
         <select name="source" style={{fontSize:"20px"}} onChange={(e)=>{setSourceVSM(e.target.value)}}>
-    <option value="Document 1" style={{fontFamily:"gilroy-regular"}}>Document1</option>
+        <option value="Document 1" style={{fontFamily:"gilroy-regular"}}>Document1</option>
     <option value="Document 2" style={{fontFamily:"gilroy-regular"}}>Document2</option>
     <option value="Document 3" style={{fontFamily:"gilroy-regular"}}>Document3</option>
+    <option value="Document 4" style={{fontFamily:"gilroy-regular"}}>Document4</option>
+    <option value="Document 5" style={{fontFamily:"gilroy-regular"}}>Document5</option>
+    <option value="Document 6" style={{fontFamily:"gilroy-regular"}}>Document6</option>
+    <option value="Document 7" style={{fontFamily:"gilroy-regular"}}>Document7</option>
+    <option value="Document 8" style={{fontFamily:"gilroy-regular"}}>Document8</option>
+    <option value="Document 9" style={{fontFamily:"gilroy-regular"}}>Document9</option>
+    <option value="Document 10" style={{fontFamily:"gilroy-regular"}}>Document10</option>
+    <option value="Document 11" style={{fontFamily:"gilroy-regular"}}>Document11</option>
+    <option value="Document 12" style={{fontFamily:"gilroy-regular"}}>Document12</option>
+    <option value="Document 13" style={{fontFamily:"gilroy-regular"}}>Document13</option>
+    <option value="Document 14" style={{fontFamily:"gilroy-regular"}}>Document14</option>
+    <option value="Document 15" style={{fontFamily:"gilroy-regular"}}>Document15</option>
+    <option value="Document 16" style={{fontFamily:"gilroy-regular"}}>Document16</option>
+    <option value="Document 17" style={{fontFamily:"gilroy-regular"}}>Document17</option>
+    <option value="Document 18" style={{fontFamily:"gilroy-regular"}}>Document18</option>
+    <option value="Document 19" style={{fontFamily:"gilroy-regular"}}>Document19</option>
+    <option value="Document 20" style={{fontFamily:"gilroy-regular"}}>Document20</option>
     
       </select>
         </div>
@@ -101,9 +152,26 @@ const TED= async()=>{
      <div>
      <label style={{fontSize:"20px" , fontFamily:"gilroy-regular"}}> Destination: </label>
      <select name="source" style={{fontSize:"20px"}} onChange={(e)=>{setDestinationVSM(e.target.value)}}>
-    <option value="Document 1" style={{fontFamily:"gilroy-regular"}}>Document1</option>
+     <option value="Document 1" style={{fontFamily:"gilroy-regular"}}>Document1</option>
     <option value="Document 2" style={{fontFamily:"gilroy-regular"}}>Document2</option>
     <option value="Document 3" style={{fontFamily:"gilroy-regular"}}>Document3</option>
+    <option value="Document 4" style={{fontFamily:"gilroy-regular"}}>Document4</option>
+    <option value="Document 5" style={{fontFamily:"gilroy-regular"}}>Document5</option>
+    <option value="Document 6" style={{fontFamily:"gilroy-regular"}}>Document6</option>
+    <option value="Document 7" style={{fontFamily:"gilroy-regular"}}>Document7</option>
+    <option value="Document 8" style={{fontFamily:"gilroy-regular"}}>Document8</option>
+    <option value="Document 9" style={{fontFamily:"gilroy-regular"}}>Document9</option>
+    <option value="Document 10" style={{fontFamily:"gilroy-regular"}}>Document10</option>
+    <option value="Document 11" style={{fontFamily:"gilroy-regular"}}>Document11</option>
+    <option value="Document 12" style={{fontFamily:"gilroy-regular"}}>Document12</option>
+    <option value="Document 13" style={{fontFamily:"gilroy-regular"}}>Document13</option>
+    <option value="Document 14" style={{fontFamily:"gilroy-regular"}}>Document14</option>
+    <option value="Document 15" style={{fontFamily:"gilroy-regular"}}>Document15</option>
+    <option value="Document 16" style={{fontFamily:"gilroy-regular"}}>Document16</option>
+    <option value="Document 17" style={{fontFamily:"gilroy-regular"}}>Document17</option>
+    <option value="Document 18" style={{fontFamily:"gilroy-regular"}}>Document18</option>
+    <option value="Document 19" style={{fontFamily:"gilroy-regular"}}>Document19</option>
+    <option value="Document 20" style={{fontFamily:"gilroy-regular"}}>Document20</option>
     
       </select>
      </div>
@@ -123,7 +191,6 @@ const TED= async()=>{
      <select name="source" style={{fontSize:"20px"}} onChange={(e)=>{setMeasure(e.target.value)}}>
     <option value="cosine" style={{fontFamily:"gilroy-regular"}}>Cosine</option>
     <option value="euclidian" style={{fontFamily:"gilroy-regular"}}>Euclidian</option>
-    <option value="pearson" style={{fontFamily:"gilroy-regular"}}>Pearson</option>
     
       </select>
      </div>

@@ -3,8 +3,6 @@ import React from 'react'
 
 export default function Doc7() {
     const doc7 = `<Department>
-
-
     <Student>
     John Takagi
     </Student>

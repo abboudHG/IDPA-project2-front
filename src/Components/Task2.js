@@ -9,8 +9,9 @@ export default function Task2() {
   const [query,setQuery]=useState('')
   const [docs, setDocs]=useState([]);
   const [searchDone,setSearchDone]=useState(false)
-  const [results,setResults]=useState()
+  const [results,setResults]=useState(1)
   const [time,setTime]=useState()
+  const [k,setK]=useState(5)
 const options=[{value: 'a', label:<div> <span style={{fontFamily:"gilroy-bold",fontSize:"20px"}} >a</span></div> }]
 let paths=[]
 const getPaths=async()=>{
@@ -31,7 +32,7 @@ const fillOptions=()=>{
     }
 }
 const getSearchXMLPaths= async()=>{
-  const dic1={'query': query , 'mode':mode}
+  const dic1={'query': query , 'mode':mode, 'k': k}
   await fetch("http://127.0.0.1:5500/searchXMLPaths", {
     method: "POST",
     headers: {
@@ -41,8 +42,17 @@ const getSearchXMLPaths= async()=>{
 
     },
     body: JSON.stringify(dic1)
-    }).then((resp)=>{return resp.json()}).then((data)=>{ 
-      console.log(data) ; setDocs(data['arrDoc']);setSearchDone(true); setTime(data['time']); setResults(data['results'])})
+    }).then((resp)=>{return resp.json()}).then((data)=>{
+      setDocs(data['arrDoc']);
+      console.log(data) ; 
+        
+      
+        setSearchDone(true); setTime(data['time']); setResults(data['results'])
+     
+   
+     
+    
+    })
 
 
 }
@@ -65,6 +75,13 @@ useEffect( ()=>{
       </select>
         </div>
  <div style={{width:'600px', position: 'relative', left: '300px', margin: '30px 30px 30px 30px'}}>  
+ <Form >
+ <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Form.Control type="text" placeholder="Insert k" defaultValue={5} onChange={(e)=>{setK(e.target.value)}} />
+
+  </Form.Group>
+
+ </Form>
  <div className='task2Search'>
  <div className='search-button'>
  <Form >
@@ -74,10 +91,11 @@ useEffect( ()=>{
   </Form.Group>
 
  </Form>
-       <Button variant="dark" style={{margin:'10px 10px 10px 10px '}} onClick={getSearchXMLPaths}>Search </Button>{' '}
+       <Button variant="dark" style={{margin:'10px 10px 10px 10px '}} onClick={()=>{getSearchXMLPaths()}}>Search </Button>{' '}
  </div> 
  </div>
-{searchDone==true? <h3 style={{fontFamily:'gilroy-regular'}}> Results: {results}</h3>:null}
+
+{searchDone==true && results!=0 ? <h3 style={{fontFamily:'gilroy-regular'}}> Results: {results}</h3>: null}
 {searchDone==true? <h3 style={{fontFamily:'gilroy-regular'}}> Time(in seconds): {time}</h3>:null}
  <div className='docs'> 
  <ul>

@@ -16,8 +16,6 @@ import table from '../table.png'
 import Select from 'react-select'
 import{useNavigate} from 'react-router-dom'
 import Modal from 'react-bootstrap/Modal'
-import XMLParser from 'react-xml-parser';
-import Table from 'react-bootstrap/Table'
 export default function Home() {
   
 let [structureOnly,setStructure]=useState({})
@@ -61,7 +59,20 @@ structure();
         {value:"D4", label: <span> Document 4</span>},
         {value:"D5", label: <span> Document 5</span>},
         {value:"D6", label: <span> Document 6</span>},
-        {value:"D7", label: <span> Document 7</span>}
+        {value:"D7", label: <span> Document 7</span>},
+        {value:"D9", label: <span> Document 8</span>},
+        {value:"D9", label: <span> Document 9</span>},
+        {value:"D10", label: <span> Document 10</span>},
+        {value:"D11", label: <span> Document 11</span>},
+        {value:"D12", label: <span> Document 12</span>},
+        {value:"D13", label: <span> Document 13</span>},
+        {value:"D14", label: <span> Document 14</span>},
+        {value:"D15", label: <span> Document 15</span>},
+        {value:"D16", label: <span> Document 16</span>},
+        {value:"D17", label: <span> Document 17</span>},
+        {value:"D18", label: <span> Document 18</span>},
+        {value:"D19", label: <span> Document 19</span>},
+        {value:"D20", label: <span> Document 20</span>},
 
       ]
       let [chosenDoc,setChosenDoc]=useState('')
@@ -100,7 +111,7 @@ structure();
      <CardActions>
        
       <Button size="small" onClick={()=>{navigate('/task1')}} >Start </Button>
-       
+      <Button size="small" onClick={()=>{handleShow()}} >Discussion </Button>
      </CardActions>
    </Card>
     </div>
@@ -230,7 +241,25 @@ structure();
         </div>
 
 
-
+        <Modal show={show} onHide={handleClose} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>Discussion TED and VSM</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <ul>
+            <li>Less time when we are comparing two similar documents using VSM</li>
+            <li>In structural precision, TED is definetly more accurate</li>
+            <li>TF-IDF is unecessary in this case since we are comparing two documents in the same corpus</li>
+            <li> Different similarity but directly proportional</li>
+          </ul>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+    
+        </Modal.Footer>
+      </Modal>
 
 
 

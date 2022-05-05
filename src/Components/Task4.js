@@ -11,11 +11,11 @@ export default function Task4() {
   const [searchDone,setSearchDone]=useState(false)
   const [results,setResults]=useState()
   const [time,setTime]=useState()
-
+  const[k,setK]=useState(5)
 
 
 const getSearchContent= async()=>{
-  const dic1={'query': query , 'mode':mode}
+  const dic1={'query': query , 'mode':mode, 'k': k}
   await fetch("http://127.0.0.1:5700/contentStructure", {
     method: "POST",
     headers: {
@@ -45,7 +45,14 @@ const getSearchContent= async()=>{
     
       </select>
         </div>
- <div style={{width:'600px', position: 'relative', left: '300px', margin: '30px 30px 30px 30px'}}>  
+ <div style={{width:'600px', position: 'relative', left: '300px', margin: '30px 30px 30px 30px'}}> 
+ <Form >
+ <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Form.Control type="text" placeholder="Insert k" defaultValue={5} onChange={(e)=>{setK(e.target.value)}} />
+
+  </Form.Group>
+
+ </Form> 
  <div className='task2Search'>
  <div className='search-button'>
  <Form >

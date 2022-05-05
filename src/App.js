@@ -24,6 +24,19 @@ import Doc4 from './Components/Doc4';
 import Doc5 from './Components/Doc5';
 import Doc6 from './Components/Doc6';
 import Doc7 from './Components/Doc7';
+import Doc8 from './Components/Doc8';
+import Doc9 from './Components/Doc9';
+import Doc10 from './Components/Doc10';
+import Doc11 from './Components/Doc11';
+import Doc12 from './Components/Doc12';
+import Doc13 from './Components/Doc13';
+import Doc14 from './Components/Doc14';
+import Doc15 from './Components/Doc15';
+import Doc16 from './Components/Doc16';
+import Doc17 from './Components/Doc17';
+import Doc18 from './Components/Doc18';
+import Doc19 from './Components/Doc19';
+import Doc20 from './Components/Doc20';
 import Task4 from './Components/Task4';
 
 import Structure from './Components/Structure';
@@ -68,6 +81,19 @@ const navigate=useNavigate();
   <Route path='/D5' element={<Doc5/>}/>
   <Route path='/D6' element={<Doc6/>}/>
   <Route path='/D7' element={<Doc7/>}/>
+  <Route path='/D8' element={<Doc8/>}/>
+  <Route path='/D9' element={<Doc9/>}/>
+  <Route path='/D10' element={<Doc10/>}/>
+  <Route path='/D11' element={<Doc11/>}/>
+  <Route path='/D12' element={<Doc12/>}/>
+  <Route path='/D13' element={<Doc13/>}/>
+  <Route path='/D14' element={<Doc14/>}/>
+  <Route path='/D15' element={<Doc15/>}/>
+  <Route path='/D16' element={<Doc16/>}/>
+  <Route path='/D17' element={<Doc17/>}/>
+  <Route path='/D18' element={<Doc18/>}/>
+  <Route path='/D19' element={<Doc19/>}/>
+  <Route path='/D20' element={<Doc20/>}/>
 </Routes>
 
 
